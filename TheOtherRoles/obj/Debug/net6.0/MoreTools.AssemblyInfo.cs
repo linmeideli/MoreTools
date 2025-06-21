@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("MoreTools")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f8ef7a2338145e316974071322c1be6fcad62be")]
 [assembly: System.Reflection.AssemblyProductAttribute("MoreTools")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MoreTools")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

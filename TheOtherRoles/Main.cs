@@ -15,7 +15,6 @@ using System;
 using UnityEngine;
 using Il2CppSystem.Security.Cryptography;
 using Il2CppSystem.Text;
-using Reactor.Networking.Attributes;
 using AmongUs.Data;
 using System.Threading.Tasks;
 using MoreTools.Tools;
@@ -24,7 +23,6 @@ namespace MoreTools
 {
     [BepInPlugin(Id, "MoreTools", VersionString)]
     [BepInProcess("Among Us.exe")]
-    [ReactorModFlags(Reactor.Networking.ModFlags.RequireOnAllClients)]
     
     public class MoreToolsPlugin : BasePlugin
     {
@@ -40,7 +38,6 @@ namespace MoreTools
 
         public override void Load() {
 
-            _ = HttpBanList.LoadHttpBanList();
             Logger = Log;
             Instance = this;
             Harmony.PatchAll();

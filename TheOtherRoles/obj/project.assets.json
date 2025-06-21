@@ -433,22 +433,6 @@
           }
         }
       },
-      "Reactor/2.3.1": {
-        "type": "package",
-        "dependencies": {
-          "BepInEx.Unity.IL2CPP": "6.0.0-be.679"
-        },
-        "compile": {
-          "lib/net6.0/Reactor.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Reactor.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
         "runtimeTargets": {
@@ -2074,20 +2058,6 @@
         "lib/netstandard2.0/MonoMod.Utils.xml",
         "monomod.utils.22.5.1.1.nupkg.sha512",
         "monomod.utils.nuspec"
-      ]
-    },
-    "Reactor/2.3.1": {
-      "sha512": "CsFs84aM3PA6+74TzHEAUayXOosYBJEJKf1Ebs3CpL10RMLrj+WRAWrpgFoNd9qS+pIzQflW76Q5Pgg/aOQ40w==",
-      "type": "package",
-      "path": "reactor/2.3.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "icon.png",
-        "lib/net6.0/Reactor.dll",
-        "lib/net6.0/Reactor.xml",
-        "reactor.2.3.1.nupkg.sha512",
-        "reactor.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
@@ -4831,8 +4801,7 @@
     "net6.0": [
       "AmongUs.GameLibs.Steam >= 2025.3.25",
       "BepInEx.IL2CPP.MSBuild >= 2.1.0-rc.1",
-      "BepInEx.Unity.IL2CPP >= 6.0.0-be.697",
-      "Reactor >= 2.3.1"
+      "BepInEx.Unity.IL2CPP >= 6.0.0-be.697"
     ]
   },
   "packageFolders": {
@@ -4842,17 +4811,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\Downloads\\TheOtherRoles-main\\TheOtherRoles-main\\TheOtherRoles\\MoreTools.csproj",
+      "projectUniqueName": "E:\\WindowsFile\\MoreTools\\TheOtherRoles\\MoreTools.csproj",
       "projectName": "MoreTools",
-      "projectPath": "C:\\Users\\ASUS\\Downloads\\TheOtherRoles-main\\TheOtherRoles-main\\TheOtherRoles\\MoreTools.csproj",
+      "projectPath": "E:\\WindowsFile\\MoreTools\\TheOtherRoles\\MoreTools.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\Downloads\\TheOtherRoles-main\\TheOtherRoles-main\\TheOtherRoles\\obj\\",
+      "outputPath": "E:\\WindowsFile\\MoreTools\\TheOtherRoles\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ASUS\\Downloads\\TheOtherRoles-main\\TheOtherRoles-main\\NuGet.Config",
+        "E:\\WindowsFile\\MoreTools\\NuGet.Config",
         "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -4902,10 +4871,6 @@
           "BepInEx.Unity.IL2CPP": {
             "target": "Package",
             "version": "[6.0.0-be.697, )"
-          },
-          "Reactor": {
-            "target": "Package",
-            "version": "[2.3.1, )"
           }
         },
         "imports": [

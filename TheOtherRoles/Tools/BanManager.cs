@@ -28,17 +28,13 @@ namespace MoreTools.Tools
         }
         public static bool CheckBanList(InnerNet.ClientData player)
         {
+            _ = HttpBanList.LoadHttpBanList();
             if (player == null || player?.FriendCode == "") return false;
             try
             {
                 foreach (string bp in HttpBanList.httpBanList) 
                 {
-                    MoreToolsPlugin.Logger.LogInfo(bp);
-                    while (bp != null)
-                    {
-                        if (bp == "") continue;
-                        if (player.FriendCode == bp) return true;
-                    }
+                    if (player.FriendCode == bp) return true;
                 }
             }
             catch (Exception ex)
@@ -72,6 +68,7 @@ namespace MoreTools.Tools
                 foreach (string line in httpBanList.Split("\n", StringSplitOptions.RemoveEmptyEntries))
                 {
                     HttpBanList.httpBanList.Add(line);
+                    MoreToolsPlugin.Logger.LogInfo("BAN名单：\n" + line);
                 }
             }
         }
